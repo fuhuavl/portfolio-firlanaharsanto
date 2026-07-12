@@ -1,8 +1,10 @@
+import { RevealArticle, RevealItem, RevealSection } from "@/components/ScrollReveal";
+
 export function FeaturedContentCard() {
   return (
-    <section id="event" className="mx-auto w-full max-w-[1440px] px-[122px] pb-[117px]">
-      <article className="overflow-hidden rounded-[16px] bg-white p-[38px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-        <div className="h-[620px] w-full overflow-hidden rounded-[12px]">
+    <RevealSection id="event" className="mx-auto w-full max-w-[1440px] px-[122px] pb-[117px]">
+      <RevealArticle className="overflow-hidden rounded-[16px] bg-white p-[38px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <RevealItem className="h-[620px] w-full overflow-hidden rounded-[12px]">
           <iframe
             className="h-full w-full"
             src="https://www.youtube.com/embed/aQCoAK_dyqU"
@@ -10,8 +12,8 @@ export function FeaturedContentCard() {
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
-        </div>
-        <div className="px-[20px] pb-[27px] pt-[40px]">
+        </RevealItem>
+        <RevealItem className="px-[20px] pb-[27px] pt-[40px]">
           <h2 className="mb-[28px] text-[56px] font-black leading-none tracking-[0] text-[#232336]">
             Jakarta Future Festival
           </h2>
@@ -21,8 +23,8 @@ export function FeaturedContentCard() {
           <p className="text-[14px] font-medium leading-[1.36] text-[#333333]">
             The project focused on enhancing public awareness and participation by combining educational content with experiential design, making spatial planning more accessible, memorable, and enjoyable for visitors.
           </p>
-        </div>
-      </article>
-    </section>
+        </RevealItem>
+      </RevealArticle>
+    </RevealSection>
   );
 }

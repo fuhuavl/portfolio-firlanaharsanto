@@ -7,6 +7,7 @@ import {
   Palette,
   Scissors,
 } from "lucide-react";
+import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 const socials = [
   { label: "Canva", icon: Palette },
@@ -20,19 +21,19 @@ const socials = [
 
 export function SocialLinks() {
   return (
-    <section className="mx-auto flex w-full max-w-[1440px] flex-wrap justify-center gap-x-[18px] gap-y-[16px] px-[220px] pb-[109px]">
+    <RevealSection className="mx-auto flex w-full max-w-[1440px] flex-wrap justify-center gap-x-[18px] gap-y-[16px] px-[220px] pb-[109px]">
       {socials.map(({ label, icon: Icon }) => (
-        <a
+        <RevealItem
+          as="span"
           key={label}
-          href="#contact"
           className="flex h-[37px] min-w-[138px] items-center justify-center gap-[10px] rounded-full bg-white px-[23px] text-[13px] font-bold text-[#666666] shadow-[0_8px_18px_rgba(0,0,0,0.08)]"
         >
           <span className="grid h-[17px] w-[17px] place-items-center rounded-full bg-[#d9d9d9]">
             <Icon className="h-[11px] w-[11px] text-[#777777]" />
           </span>
           {label}
-        </a>
+        </RevealItem>
       ))}
-    </section>
+    </RevealSection>
   );
 }

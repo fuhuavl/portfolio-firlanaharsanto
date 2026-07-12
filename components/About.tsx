@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 export function About() {
   return (
-    <section id="about" className="mx-auto flex w-full max-w-[1440px] gap-[58px] px-[174px] pb-[122px] pt-[76px]">
-      <div className="relative h-[405px] w-[500px] overflow-hidden rounded-[18px] shadow-[0_6px_22px_rgba(0,0,0,0.04)]">
+    <RevealSection id="about" className="mx-auto flex w-full max-w-[1440px] gap-[58px] px-[174px] pb-[122px] pt-[76px]">
+      <RevealItem className="relative h-[405px] w-[500px] overflow-hidden rounded-[18px] shadow-[0_6px_22px_rgba(0,0,0,0.04)]">
         <Image
           src="/about.jpg"
           alt="About Firlana Harsanto"
@@ -11,8 +12,8 @@ export function About() {
           sizes="500px"
           className="object-cover"
         />
-      </div>
-      <div className="w-[458px] pt-[3px]">
+      </RevealItem>
+      <RevealItem className="w-[458px] pt-[3px]">
         <h2 className="mb-[35px] text-[58px] font-black leading-none tracking-[0] text-[#232336]">
           About Me
         </h2>
@@ -22,7 +23,7 @@ export function About() {
         <p className="text-[15px] font-medium leading-[1.42] text-[#333333]">
           I believe the most valuable experiences come from taking on challenges that demand both creativity and perseverance. I enjoy working in dynamic environments where I can learn quickly, adapt to new situations, and contribute meaningful solutions.
         </p>
-      </div>
-    </section>
+      </RevealItem>
+    </RevealSection>
   );
 }

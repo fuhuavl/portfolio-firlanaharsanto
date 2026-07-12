@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Minus, Plus } from "lucide-react";
+import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 const certifications = [
   {
@@ -47,22 +48,25 @@ const certifications = [
 
 export function Certification() {
   return (
-    <section className="mx-auto w-full max-w-[1440px] px-[122px] pb-[178px]">
-      <h2 className="mb-[21px] text-[62px] font-black leading-none tracking-[0] text-[#232336]">
+    <RevealSection className="mx-auto w-full max-w-[1440px] px-[122px] pb-[178px]">
+      <RevealItem>
+        <h2 className="mb-[21px] text-[62px] font-black leading-none tracking-[0] text-[#232336]">
         What I Excel at:
-      </h2>
-      <Accordion
-        type="single"
-        collapsible
-        defaultValue={["certificate-1"]}
-        className="gap-[17px]"
-      >
-        {certifications.map((certificate) => (
-          <AccordionItem
-            key={certificate.value}
-            value={certificate.value}
-            className="group overflow-hidden rounded-[18px] border-0 bg-white shadow-[0_5px_18px_rgba(0,0,0,0.08)] data-[open]:bg-[#dddddd] data-[open]:shadow-[0_5px_18px_rgba(0,0,0,0.11)]"
-          >
+        </h2>
+      </RevealItem>
+      <RevealItem>
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue={["certificate-1"]}
+          className="gap-[17px]"
+        >
+          {certifications.map((certificate) => (
+            <RevealItem key={certificate.value}>
+              <AccordionItem
+                value={certificate.value}
+                className="group overflow-hidden rounded-[18px] border-0 bg-white shadow-[0_5px_18px_rgba(0,0,0,0.08)] data-[open]:bg-[#dddddd] data-[open]:shadow-[0_5px_18px_rgba(0,0,0,0.11)]"
+              >
             <AccordionTrigger className="h-[64px] items-center rounded-[16px] px-[28px] py-0 text-left hover:no-underline focus-visible:ring-0 focus-visible:ring-offset-0 group-data-[open]:h-auto group-data-[open]:items-start group-data-[open]:pt-[26px] [&_[data-slot=accordion-trigger-icon]]:hidden">
               <h3 className="text-[15px] font-black text-[#222222]">
                 {certificate.title}
@@ -81,15 +85,17 @@ export function Certification() {
                   href={certificate.buttonLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-[18px] inline-flex min-h-[42px] min-w-[220px] items-center justify-center rounded-full bg-white px-[20px] py-[10px] text-center text-[12px] font-semibold text-[#777777] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.07)]"
+                  className="mt-[18px] inline-flex min-h-[42px] min-w-[220px] cursor-pointer items-center justify-center rounded-full bg-white px-[20px] py-[10px] text-center text-[12px] font-semibold text-[#777777] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.07)] transition duration-300 hover:scale-[1.04] hover:brightness-110"
                 >
                   {certificate.buttonLabel}
                 </a>
               ) : null}
             </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </section>
+              </AccordionItem>
+            </RevealItem>
+          ))}
+        </Accordion>
+      </RevealItem>
+    </RevealSection>
   );
 }

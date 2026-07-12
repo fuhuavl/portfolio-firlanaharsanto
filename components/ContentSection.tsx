@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 export function ContentSection() {
   return (
-    <section id="content" className="mx-auto flex w-full max-w-[1440px] items-center px-[172px] pb-[162px]">
-      <div className="relative h-[470px] w-[625px]">
+    <RevealSection id="content" className="mx-auto flex w-full max-w-[1440px] items-center px-[172px] pb-[162px]">
+      <RevealItem className="relative h-[470px] w-[625px]">
         <div className="absolute left-[-60px] top-[1px] h-[470px] w-[305px] overflow-hidden rounded-[8px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
           <video
             src="/content-1.mp4"
@@ -12,7 +13,12 @@ export function ContentSection() {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="absolute left-[263px] top-[65px] h-[298px] w-[151px] overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <a
+          href="https://www.instagram.com/reel/DUaSDz3E5PN/?igsh=MTB2emRqZ2w3ZXhjbA=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute left-[263px] top-[65px] h-[298px] w-[151px] cursor-pointer overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110"
+        >
           <Image
             src="/content-2.jpeg"
             alt="Content project 2"
@@ -20,8 +26,13 @@ export function ContentSection() {
             sizes="151px"
             className="object-cover"
           />
-        </div>
-        <div className="absolute left-[430px] top-0 h-[306px] w-[151px] overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        </a>
+        <a
+          href="https://youtube.com/shorts/Wz-e0k4x_uM?si=iXi5T53lX_ojltpt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute left-[430px] top-0 h-[306px] w-[151px] cursor-pointer overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110"
+        >
           <Image
             src="/content-3.jpeg"
             alt="Content project 3"
@@ -29,9 +40,9 @@ export function ContentSection() {
             sizes="151px"
             className="object-cover"
           />
-        </div>
-      </div>
-      <div className="ml-[90px] mt-[-3px] w-[405px]">
+        </a>
+      </RevealItem>
+      <RevealItem className="ml-[90px] mt-[-3px] w-[405px]">
         <h2 className="mb-[20px] text-[58px] font-black leading-none tracking-[0] text-[#232336]">
           Content
         </h2>
@@ -46,7 +57,7 @@ export function ContentSection() {
 >
   Linktree
 </a>
-      </div>
-    </section>
+      </RevealItem>
+    </RevealSection>
   );
 }
