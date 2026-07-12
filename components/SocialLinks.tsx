@@ -1,11 +1,21 @@
-import { Circle, Code, Globe, PenTool, Video } from "lucide-react";
+import {
+  BadgeCheck,
+  BriefcaseBusiness,
+  Layers3,
+  MonitorPlay,
+  MessagesSquare,
+  Palette,
+  Scissors,
+} from "lucide-react";
 
 const socials = [
-  { label: "Behance", icon: Circle },
-  { label: "Dribbble", icon: Globe },
-  { label: "Github", icon: Code },
-  { label: "Figma", icon: PenTool },
-  { label: "YouTube", icon: Video },
+  { label: "Canva", icon: Palette },
+  { label: "Capcut", icon: Scissors },
+  { label: "Meta", icon: MessagesSquare },
+  { label: "Adobe", icon: Layers3 },
+  { label: "Microsoft Office", icon: BriefcaseBusiness },
+  { label: "Google Workspace", icon: BadgeCheck },
+  { label: "OBS", icon: MonitorPlay },
 ];
 
 export function SocialLinks() {

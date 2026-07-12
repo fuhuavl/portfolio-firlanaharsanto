@@ -1,4 +1,5 @@
-import { Placeholder } from "./Placeholder";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Photography() {
   return (
@@ -7,24 +8,52 @@ export function Photography() {
         <h2 className="mb-[42px] text-[62px] font-black leading-none tracking-[0] text-[#232336]">
           Photography
         </h2>
-        <Placeholder className="mb-[28px] h-[370px] w-full rounded-[7px]" />
-        <Placeholder className="mb-[34px] h-[386px] w-full rounded-[7px]" />
-        <button className="h-[40px] rounded-full bg-[#9d9d9d] px-[20px] text-[11px] font-bold text-white">
+        <div className="relative mb-[28px] h-[370px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+          <Image
+            src="/photography-1.JPG"
+            alt="Photography 1"
+            fill
+            sizes="620px"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative mb-[34px] h-[386px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+          <Image
+            src="/photography-3.JPG"
+            alt="Photography 3"
+            fill
+            sizes="620px"
+            className="object-cover"
+          />
+        </div>
+        <Link href="/photography" className="inline-flex h-[40px] cursor-pointer items-center rounded-full bg-[#9d9d9d] px-[20px] text-[11px] font-bold text-white transition duration-300 hover:scale-[1.04] hover:brightness-110">
           See More Photography
-        </button>
+        </Link>
       </div>
       <div className="pt-[33px]">
-        <Placeholder className="mb-[29px] h-[389px] w-full rounded-[7px]" />
-        <Placeholder className="mb-[35px] h-[393px] w-full rounded-[7px]" />
+        <div className="relative mb-[29px] h-[389px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+          <Image
+            src="/photography-2.jpg"
+            alt="Photography 2"
+            fill
+            sizes="542px"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative mb-[35px] h-[393px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+          <Image
+            src="/photography-4.jpg"
+            alt="Photography 4"
+            fill
+            sizes="542px"
+            className="object-cover"
+          />
+        </div>
         <p className="mb-[22px] text-[14px] font-medium leading-[1.36] text-[#333333]">
-          Eusmod ullamco exercitation consectetur dolore magna occaecat ea in
-          dolor elit. Aliquip sint non labore dolore aliquip dolor aliqua minim
-          commodo consectetur nostrud aute. Magna proident dolore id ullamco
-          occaecat exercitation quis reprehenderit aute.
+          Photography has always been one of my greatest passions. I am deeply drawn to storytelling through images, with a particular interest in portrait photography that captures genuine emotions, authentic moments, and the stories behind every individual.
         </p>
         <p className="text-[14px] font-medium leading-[1.36] text-[#333333]">
-          Consectetur dolore deserunt laborum officia id consectetur magna labore
-          ut consequat velit do.
+          For me, every photograph should do more than capture a face, it should tell a story.
         </p>
       </div>
     </section>

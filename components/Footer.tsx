@@ -5,7 +5,7 @@ const links = ["Home", "About", "Event", "Photography", "Videography", "Contact"
 export function Footer() {
   return (
     <footer className="border-t border-[#dddddd] bg-white">
-      <div className="mx-auto grid h-[156px] w-full max-w-[1440px] grid-cols-[1fr_230px_160px] items-start px-[102px] pt-[46px] text-[10px] font-semibold text-[#222222]">
+      <div className="mx-auto grid w-full max-w-[1440px] grid-cols-[1fr_230px_160px] items-start px-[102px] py-[40px] text-[13px] font-semibold text-[#222222]">
         <div className="flex items-center gap-[8px]">
           <Circle className="h-[25px] w-[25px] fill-[#9d9d9d] stroke-none" />
           <span>Firlana Harsanto</span>

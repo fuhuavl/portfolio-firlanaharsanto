@@ -1,25 +1,25 @@
-import { Placeholder } from "./Placeholder";
-
 export function FeaturedContentCard() {
   return (
     <section id="event" className="mx-auto w-full max-w-[1440px] px-[122px] pb-[117px]">
       <article className="overflow-hidden rounded-[16px] bg-white p-[38px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-        <Placeholder className="h-[620px] w-full rounded-[12px]" />
+        <div className="h-[620px] w-full overflow-hidden rounded-[12px]">
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube.com/embed/aQCoAK_dyqU"
+            title="Jakarta Future Festival video"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
         <div className="px-[20px] pb-[27px] pt-[40px]">
           <h2 className="mb-[28px] text-[56px] font-black leading-none tracking-[0] text-[#232336]">
             Jakarta Future Festival
           </h2>
           <p className="mb-[24px] text-[14px] font-medium leading-[1.36] text-[#333333]">
-            Eusmod ullamco exercitation consectetur dolore magna occaecat ea in
-            dolor elit. Aliquip sint non labore dolore aliquip dolor aliqua minim
-            commodo consectetur nostrud aute. Magna proident dolore id ullamco
-            occaecat exercitation quis reprehenderit aute.
+            Designed and developed the creative concept for an interactive exhibition booth for the Jakarta Provincial Government’s Department of Spatial Planning (DCKTRP), transforming complex urban planning information into an engaging public experience through immersive storytelling, interactive games, visitor journey design, creative copywriting, and strategic brand activation.
           </p>
           <p className="text-[14px] font-medium leading-[1.36] text-[#333333]">
-            Consectetur dolore deserunt laborum officia id consectetur magna
-            labore ut consequat velit do. Id ea dolore quis consequat dolore
-            deserunt incididunt in. Quisque exercitation in ad irure velit dolor
-            est culpa.
+            The project focused on enhancing public awareness and participation by combining educational content with experiential design, making spatial planning more accessible, memorable, and enjoyable for visitors.
           </p>
         </div>
       </article>
