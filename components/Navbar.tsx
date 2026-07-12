@@ -1,4 +1,8 @@
-import { Circle } from "lucide-react";
+
+
+"use client";
+
+import { motion } from "framer-motion";
 
 const menu = [
   "Home",
@@ -12,10 +16,14 @@ const menu = [
 
 export function Navbar() {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full bg-white/85 backdrop-blur-sm">
+    <motion.header
+      className="fixed left-0 top-0 z-50 w-full bg-white/85 backdrop-blur-sm"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <nav className="mx-auto flex h-[52px] w-full max-w-[1440px] items-center justify-between px-[38px] text-[13px] font-medium text-[#666666]">
         <a href="#home" className="flex items-center gap-[9px] text-[#222222]">
-          <Circle className="h-[22px] w-[22px] fill-[#9d9d9d] stroke-none" />
           <span className="text-[14px] font-semibold">Firlana Harsanto</span>
         </a>
         <div className="hidden items-center gap-[34px] md:flex">
@@ -30,6 +38,6 @@ export function Navbar() {
           ))}
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 }
