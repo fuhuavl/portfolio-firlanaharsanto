@@ -4,12 +4,12 @@ import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 export function Photography() {
   return (
-    <RevealSection id="photography" className="mx-auto grid w-full max-w-[1440px] grid-cols-[620px_1fr] gap-x-[34px] px-[122px] pb-[130px]">
+    <RevealSection id="photography" className="mx-auto grid w-full max-w-[1440px] grid-cols-[620px_1fr] gap-x-[34px] px-[122px] pb-[130px] max-md:grid-cols-1 max-md:gap-[28px] max-md:px-[24px] max-md:pb-[96px]">
       <RevealItem>
-        <h2 className="mb-[42px] text-[62px] font-black leading-none tracking-[0] text-[#232336]">
+        <h2 className="mb-[42px] text-[62px] font-black leading-none tracking-[0] text-[#232336] max-md:mb-[28px]">
           Photography
         </h2>
-        <div className="relative mb-[28px] h-[370px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <div className="relative mb-[28px] h-[370px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:aspect-[620/370] max-md:h-auto">
           <Image
             src="/photography-1.JPG"
             alt="Photography 1"
@@ -18,7 +18,7 @@ export function Photography() {
             className="object-cover"
           />
         </div>
-        <div className="relative mb-[34px] h-[386px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <div className="relative mb-[34px] h-[386px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:aspect-[620/386] max-md:h-auto">
           <Image
             src="/photography-3.JPG"
             alt="Photography 3"
@@ -27,12 +27,12 @@ export function Photography() {
             className="object-cover"
           />
         </div>
-        <Link href="/photography" scroll={true} className="inline-flex h-[40px] cursor-pointer items-center rounded-full bg-[#9d9d9d] px-[20px] text-[11px] font-bold text-white transition duration-300 hover:scale-[1.04] hover:brightness-110">
+        <Link href="/photography" scroll={true} className="inline-flex h-[40px] cursor-pointer items-center rounded-full bg-[#9d9d9d] px-[20px] text-[11px] font-bold text-white transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:h-[46px]">
           See More Photography
         </Link>
       </RevealItem>
-      <RevealItem className="pt-[33px]">
-        <div className="relative mb-[29px] h-[389px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+      <RevealItem className="pt-[33px] max-md:pt-0">
+        <div className="relative mb-[29px] h-[389px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:aspect-[542/389] max-md:h-auto">
           <Image
             src="/photography-2.jpg"
             alt="Photography 2"
@@ -41,7 +41,7 @@ export function Photography() {
             className="object-cover"
           />
         </div>
-        <div className="relative mb-[35px] h-[393px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <div className="relative mb-[35px] h-[393px] w-full overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:aspect-[542/393] max-md:h-auto">
           <Image
             src="/photography-4.jpg"
             alt="Photography 4"

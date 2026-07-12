@@ -48,9 +48,9 @@ const certifications = [
 
 export function Certification() {
   return (
-    <RevealSection className="mx-auto w-full max-w-[1440px] px-[122px] pb-[178px]">
+    <RevealSection className="mx-auto w-full max-w-[1440px] px-[122px] pb-[178px] max-md:px-[24px] max-md:pb-[96px]">
       <RevealItem>
-        <h2 className="mb-[21px] text-[62px] font-black leading-none tracking-[0] text-[#232336]">
+        <h2 className="mb-[21px] text-[62px] font-black leading-none tracking-[0] text-[#232336] max-md:mb-[24px]">
         What I Excel at:
         </h2>
       </RevealItem>
@@ -67,7 +67,7 @@ export function Certification() {
                 value={certificate.value}
                 className="group overflow-hidden rounded-[18px] border-0 bg-white shadow-[0_5px_18px_rgba(0,0,0,0.08)] data-[open]:bg-[#dddddd] data-[open]:shadow-[0_5px_18px_rgba(0,0,0,0.11)]"
               >
-            <AccordionTrigger className="h-[64px] items-center rounded-[16px] px-[28px] py-0 text-left hover:no-underline focus-visible:ring-0 focus-visible:ring-offset-0 group-data-[open]:h-auto group-data-[open]:items-start group-data-[open]:pt-[26px] [&_[data-slot=accordion-trigger-icon]]:hidden">
+            <AccordionTrigger className="h-[64px] items-center rounded-[16px] px-[28px] py-0 text-left hover:no-underline focus-visible:ring-0 focus-visible:ring-offset-0 group-data-[open]:h-auto group-data-[open]:items-start group-data-[open]:pt-[26px] max-md:min-h-[64px] max-md:px-[20px] [&_[data-slot=accordion-trigger-icon]]:hidden">
               <h3 className="text-[15px] font-black text-[#222222]">
                 {certificate.title}
               </h3>
@@ -76,7 +76,7 @@ export function Certification() {
                 <Minus className="absolute inset-0 h-[18px] w-[18px] opacity-0 transition-all duration-300 group-data-[open]:opacity-100" />
               </span>
             </AccordionTrigger>
-            <AccordionContent className="px-[28px] pb-[28px]">
+            <AccordionContent className="px-[28px] pb-[28px] max-md:px-[20px]">
               <p className="mt-[24px] max-w-[1020px] text-[14px] font-medium leading-[1.45] text-[#333333]">
                 {certificate.description}
               </p>
@@ -85,7 +85,7 @@ export function Certification() {
                   href={certificate.buttonLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-[18px] inline-flex min-h-[42px] min-w-[220px] cursor-pointer items-center justify-center rounded-full bg-white px-[20px] py-[10px] text-center text-[12px] font-semibold text-[#777777] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.07)] transition duration-300 hover:scale-[1.04] hover:brightness-110"
+                  className="mt-[18px] inline-flex min-h-[42px] min-w-[220px] cursor-pointer items-center justify-center rounded-full bg-white px-[20px] py-[10px] text-center text-[12px] font-semibold text-[#777777] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.07)] transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:min-h-[46px] max-md:w-full"
                 >
                   {certificate.buttonLabel}
                 </a>

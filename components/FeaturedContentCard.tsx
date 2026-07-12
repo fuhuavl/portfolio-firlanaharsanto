@@ -2,9 +2,9 @@ import { RevealArticle, RevealItem, RevealSection } from "@/components/ScrollRev
 
 export function FeaturedContentCard() {
   return (
-    <RevealSection id="event" className="mx-auto w-full max-w-[1440px] px-[122px] pb-[117px]">
-      <RevealArticle className="overflow-hidden rounded-[16px] bg-white p-[38px] shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-        <RevealItem className="h-[620px] w-full overflow-hidden rounded-[12px]">
+    <RevealSection id="event" className="mx-auto w-full max-w-[1440px] px-[122px] pb-[117px] max-md:px-[24px] max-md:pb-[88px]">
+      <RevealArticle className="overflow-hidden rounded-[16px] bg-white p-[38px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:p-[18px]">
+        <RevealItem className="h-[620px] w-full overflow-hidden rounded-[12px] max-md:aspect-video max-md:h-auto">
           <iframe
             className="h-full w-full"
             src="https://www.youtube.com/embed/aQCoAK_dyqU"
@@ -13,8 +13,8 @@ export function FeaturedContentCard() {
             allowFullScreen
           />
         </RevealItem>
-        <RevealItem className="px-[20px] pb-[27px] pt-[40px]">
-          <h2 className="mb-[28px] text-[56px] font-black leading-none tracking-[0] text-[#232336]">
+        <RevealItem className="px-[20px] pb-[27px] pt-[40px] max-md:px-0 max-md:pb-[12px] max-md:pt-[28px]">
+          <h2 className="mb-[28px] text-[56px] font-black leading-none tracking-[0] text-[#232336] max-md:mb-[22px]">
             Jakarta Future Festival
           </h2>
           <p className="mb-[24px] text-[14px] font-medium leading-[1.36] text-[#333333]">

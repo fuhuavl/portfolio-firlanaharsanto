@@ -32,18 +32,18 @@ export default function PhotographyPage() {
   return (
     <main className="min-h-screen bg-[#f4f4f4] text-[#222222]">
       <Navbar />
-      <RevealSection className="mx-auto w-full max-w-[1440px] px-[122px] pb-[146px] pt-[135px]">
+      <RevealSection className="mx-auto w-full max-w-[1440px] px-[122px] pb-[146px] pt-[135px] max-md:px-[24px] max-md:pb-[96px] max-md:pt-[112px]">
         <RevealItem>
           <Link
             href="/#photography"
-            className="mb-[42px] inline-flex cursor-pointer items-center gap-[8px] text-[15px] font-black text-[#232336] transition duration-300 hover:scale-[1.04]"
+            className="mb-[42px] inline-flex min-h-[44px] cursor-pointer items-center gap-[8px] text-[15px] font-black text-[#232336] transition duration-300 hover:scale-[1.04] max-md:mb-[28px]"
           >
             <ChevronLeft className="h-[20px] w-[20px] stroke-[3]" />
             Back
           </Link>
         </RevealItem>
         <RevealItem>
-          <h1 className="mb-[62px] text-[76px] font-black leading-none tracking-[0] text-[#232336]">
+          <h1 className="mb-[62px] text-[76px] font-black leading-none tracking-[0] text-[#232336] max-md:mb-[38px] max-md:text-[48px]">
             Photography
           </h1>
         </RevealItem>

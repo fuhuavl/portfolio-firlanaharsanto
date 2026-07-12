@@ -3,8 +3,8 @@ import { RevealItem, RevealSection } from "@/components/ScrollReveal";
 
 export function About() {
   return (
-    <RevealSection id="about" className="mx-auto flex w-full max-w-[1440px] gap-[58px] px-[174px] pb-[122px] pt-[76px]">
-      <RevealItem className="relative h-[405px] w-[500px] overflow-hidden rounded-[18px] shadow-[0_6px_22px_rgba(0,0,0,0.04)]">
+    <RevealSection id="about" className="mx-auto flex w-full max-w-[1440px] gap-[58px] px-[174px] pb-[122px] pt-[76px] max-md:gap-[28px] max-md:pb-[88px]">
+      <RevealItem className="relative h-[405px] w-[500px] overflow-hidden rounded-[18px] shadow-[0_6px_22px_rgba(0,0,0,0.04)] max-md:aspect-[500/405] max-md:h-auto max-md:w-full">
         <Image
           src="/about.jpg"
           alt="About Firlana Harsanto"
@@ -13,8 +13,8 @@ export function About() {
           className="object-cover"
         />
       </RevealItem>
-      <RevealItem className="w-[458px] pt-[3px]">
-        <h2 className="mb-[35px] text-[58px] font-black leading-none tracking-[0] text-[#232336]">
+      <RevealItem className="w-[458px] pt-[3px] max-md:w-full">
+        <h2 className="mb-[35px] text-[58px] font-black leading-none tracking-[0] text-[#232336] max-md:mb-[24px]">
           About Me
         </h2>
         <p className="mb-[28px] text-[15px] font-medium leading-[1.42] text-[#333333]">
