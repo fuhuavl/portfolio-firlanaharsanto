@@ -20,9 +20,15 @@ export function FeaturedContentCard() {
           <p className="mb-[24px] text-[14px] font-medium leading-[1.36] text-[#333333]">
             Designed and developed the creative concept for an interactive exhibition booth for the Jakarta Provincial Government’s Department of Spatial Planning (DCKTRP), transforming complex urban planning information into an engaging public experience through immersive storytelling, interactive games, visitor journey design, creative copywriting, and strategic brand activation.
           </p>
-          <p className="text-[14px] font-medium leading-[1.36] text-[#333333]">
-            The project focused on enhancing public awareness and participation by combining educational content with experiential design, making spatial planning more accessible, memorable, and enjoyable for visitors.
-          </p>
+          
+          <a
+            href="https://docs.google.com/presentation/d/19Rlbkjkl2LeMQIS25V-uE_CmRfcNzQGZWMlu5qej3Ss/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="float-right mt-[24px] inline-flex h-[40px] cursor-pointer items-center rounded-full bg-[#9d9d9d] px-[21px] text-[11px] font-bold text-white transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:h-[46px]"
+          >
+            See More
+          </a>
         </RevealItem>
       </RevealArticle>
     </RevealSection>

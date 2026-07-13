@@ -5,14 +5,20 @@ export function ContentSection() {
   return (
     <RevealSection id="content" className="mx-auto flex w-full max-w-[1440px] items-center px-[172px] pb-[162px] max-md:gap-[30px] max-md:pb-[96px]">
       <RevealItem className="relative h-[470px] w-[625px] max-md:flex max-md:h-auto max-md:w-full max-md:flex-col max-md:gap-[18px]">
-        <div className="absolute left-[-60px] top-[1px] h-[470px] w-[305px] overflow-hidden rounded-[8px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] max-md:relative max-md:left-auto max-md:top-auto max-md:aspect-[305/470] max-md:h-auto max-md:w-full">
-          <video
-            src="/content-1.mp4"
-            controls
-            preload="metadata"
-            className="h-full w-full object-cover"
+        <a
+          href="https://www.instagram.com/reel/DXL9OppEzPg/?igsh=a3dpM3lqc2h6b2Q4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute left-[-60px] top-[1px] h-[480px] w-[305px] cursor-pointer overflow-hidden rounded-[8px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:relative max-md:left-auto max-md:top-auto max-md:h-auto max-md:w-full"
+        >
+          <Image
+            src="/content-1-rev.jpeg"
+            alt="Content project 1"
+            width={220}
+            height={400}
+            className="w-full h-auto object-contain"
           />
-        </div>
+        </a>
         <a
           href="https://www.instagram.com/reel/DUaSDz3E5PN/?igsh=MTB2emRqZ2w3ZXhjbA=="
           target="_blank"
