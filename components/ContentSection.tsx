@@ -12,7 +12,7 @@ export function ContentSection() {
           className="absolute left-[-60px] top-[1px] h-[480px] w-[305px] cursor-pointer overflow-hidden rounded-[8px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:relative max-md:left-auto max-md:top-auto max-md:h-auto max-md:w-full"
         >
           <Image
-            src="/content-1-rev.jpeg"
+            src="/content-1-rev2.jpeg"
             alt="Content project 1"
             width={220}
             height={400}
@@ -26,7 +26,7 @@ export function ContentSection() {
           className="absolute left-[263px] top-[65px] h-[298px] w-[151px] cursor-pointer overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:relative max-md:left-auto max-md:top-auto max-md:aspect-[151/298] max-md:h-auto max-md:w-full"
         >
           <Image
-            src="/content-2.jpeg"
+            src="/content-2-rev.jpeg"
             alt="Content project 2"
             fill
             sizes="151px"
@@ -40,7 +40,7 @@ export function ContentSection() {
           className="absolute left-[430px] top-0 h-[306px] w-[151px] cursor-pointer overflow-hidden rounded-[7px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.04] hover:brightness-110 max-md:relative max-md:left-auto max-md:top-auto max-md:aspect-[151/306] max-md:h-auto max-md:w-full"
         >
           <Image
-            src="/content-3.jpeg"
+            src="/content-3-rev.jpeg"
             alt="Content project 3"
             fill
             sizes="151px"
