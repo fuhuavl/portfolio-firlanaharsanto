@@ -223,6 +223,26 @@ h3,
   }
 
   #home {
-    height: 520px;
+    height: 640px;
   }
+
+  #home .hero-title {
+    left: 0 !important;
+    width: 100% !important;
+    text-align: center;
+    font-size: 92px !important;
+  }
+
+  #home .hero-title-last {
+    font-size: 64px !important;
+  }
+
+  #home .hero-intro {
+    left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 0 72px !important;
+    z-index: 60 !important;
+  }
+
 }
