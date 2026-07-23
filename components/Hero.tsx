@@ -27,17 +27,18 @@ export function Hero() {
         </motion.div>
         <div className="hero-portrait-glow absolute right-[15px] top-[-80px] z-20 h-[560px] w-[735px] max-lg:right-[-120px] max-lg:top-[10px] max-md:!left-1/2 max-md:!right-auto max-md:!top-[34px] max-md:!h-[330px] max-md:!w-[390px] max-md:!-translate-x-1/2" />
         <motion.div
-          className="absolute right-[60px] top-[78px] z-30 h-[740px] w-[665px] overflow-hidden max-lg:right-[-18px] max-lg:top-[110px] max-lg:h-[590px] max-lg:w-[500px] max-md:!left-[calc(50%-155px)] max-md:!right-auto max-md:!top-[48px] max-md:!h-[360px] max-md:!w-[310px]"
+          className="absolute right-[20px] top-[78px] z-30 h-[740px] w-[665px] overflow-hidden max-lg:right-[-4px] max-lg:top-[110px] max-lg:h-[590px] max-lg:w-[500px] max-md:!left-[calc(50%-155px)] max-md:!right-auto max-md:!top-[48px] max-md:!h-[360px] max-md:!w-[310px]"
           variants={heroItem}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <Image
-            src="/hero-portrait.png"
+            src="/hero-portrait-2.png"
             alt="Firlana Harsanto portrait"
-            fill
+            width={665}
+            height={740}
             priority
             sizes="515px"
-            className="object-contain object-bottom"
+            className="h-full w-full object-contain object-bottom"
           />
           <div className="absolute inset-x-0 bottom-0 h-[315px] bg-gradient-to-b from-white/0 via-white/78 to-white" />
         </motion.div>
